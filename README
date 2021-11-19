@@ -5,7 +5,7 @@ Currently hardcoded and tested for one ROM dump, with ICs
 	08643-87302
 	08643-87303
 	08643-87304
-labelled "3449" as well on the stickers.
+labelled "3449" as well on the stickers, but reports as "Rev 4.2.1" when booting.
 
 The ROM checksum is a 16-bit sum, calculated over 4 areas :
 0 to +0x20000, except 8 bytes at 0x400-0x0407
