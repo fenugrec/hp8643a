@@ -1,0 +1,18 @@
+collection of funcs for working with HP 8643A ROMs
+
+Currently hardcoded and tested for one ROM dump, with ICs
+	08643-87301
+	08643-87302
+	08643-87303
+	08643-87304
+labelled "3449" as well on the stickers.
+
+The ROM checksum is a 16-bit sum, calculated over 4 areas :
+0 to +0x20000, except 8 bytes at 0x400-0x0407
+20000 to 40000
+40000 to 60000
+60000 to 70000 (only testing half of the last IC which is empty anyway)
+Checksums are stored in those 8 reserved bytes at 0x400.
+
+
+(c) fenugrec 2021
